@@ -13,6 +13,7 @@ Para este módulo você precisa utilizar:
 
 Os campos do invoice são:
  
+```
 
 id?: Id // criado automaticamente
 name: string
@@ -21,14 +22,20 @@ address: Address // value object
 items: InvoiceItems[] // Invoice Items entity
 createdAt?: Date // criada automaticamente
 updatedAt?: Date // criada automaticamente
+
+```
  
 A entidade InvoiceItems precisa ter:
 
+```
 id?: Id // criada automaticamente
 name: string
 price: number
+```
+
 Para ser considerado completo, o módulo precisa ter o facade, factory, domain, gateway, repository e usecase.
 
+```
 // DTO Find
 export interface FindInvoiceUseCaseInputDTO {
   id: string;
@@ -89,6 +96,8 @@ export interface GenerateInvoiceUseCaseOutputDto {
   }[];
   total: number;
 }
+
+```
 Toda essa implementação deverá ser reproduzida através de testes.
 
 * A linguagem de programação para este desafio é TypeScript
@@ -101,11 +110,12 @@ Criação de API
 Agora que temos todos os usecases, precisamos disponibilizar os endpoints para que possamos realizar uma compra.
 
 Disponibilize os seguintes endpoints:
-
+```
 POST /products
 POST /clients
 POST /checkout/
 GET /invoice/
+```
 
 * A linguagem de programação para este desafio é TypeScript
 
