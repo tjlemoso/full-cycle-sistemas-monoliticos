@@ -10,14 +10,16 @@ const product1 = new ProductStoreCheckoutEntity({
   id: new Id('1'),
   name: 'Product 1',
   description: 'Description',
-  salesPrice: 200
+  salesPrice: 200,
+  orderId: new Id('2')
 });
 
 const product2 = new ProductStoreCheckoutEntity({
   id: new Id('2'),
   name: 'Product 2',
   description: 'Description',
-  salesPrice: 150
+  salesPrice: 150,
+  orderId: new Id('2')
 });
 
 const address = new Address({
